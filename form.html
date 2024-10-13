@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>予約フォーム</title>
+</head>
+<body>
+    <h1>予約フォーム</h1>
+    <form action="https://formspree.io/f/myzyyele" method="POST">
+        <label>
+            ニックネーム:
+            <input type="text" name="nickname" required>
+        </label><br><br>
+
+        <label>
+            年齢:
+            <input type="number" name="age" required>
+        </label><br><br>
+
+        <label>
+            希望予約日:
+            <input type="date" name="date" required>
+        </label><br><br>
+
+        <label>
+            希望時間:
+            <input type="time" name="time" required>
+        </label><br><br>
+
+        <label>
+            最寄り駅:
+            <input type="text" name="station" required>
+        </label><br><br>
+
+        <label>
+            あなたのメール:
+            <input type="email" name="email" required>
+        </label><br><br>
+
+        <label>
+            メッセージ:
+            <textarea name="message" required></textarea>
+        </label><br><br>
+
+        <button type="submit">送信</button>
+    </form>
+
+    <script>
+        // フォーム送信後のメッセージ表示
+        const form = document.querySelector('form');
+        form.onsubmit = function() {
+            alert('予約内容が送信されました。');
+        };
+    </script>
+</body>
+</html>
