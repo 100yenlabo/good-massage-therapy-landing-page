@@ -1,4 +1,5 @@
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("お問い合わせありがとうございます！できるだけ早くご返信いたします。");
+// ページ内スクロール機能
+document.querySelector('.cta-btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('#services').scrollIntoView({ behavior: 'smooth' });
 });
